@@ -2,5 +2,21 @@ table , th, td {
     border: 1px solid black;
     width: 300px;
     height: 100px;
+    background: rgb(49, 49, 49);
   }
 
+.pilkas1 {
+  background: rgb(197, 197, 197);
+}
+
+.pilkas2 {
+  background: rgb(160, 160, 160);
+}
+
+.pilkas3 {
+  background: rgb(70, 70, 70);
+}
+
+.pilkas4 {
+  background: rgb(112, 112, 112);
+}
