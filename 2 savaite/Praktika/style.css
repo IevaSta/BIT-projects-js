@@ -1,0 +1,23 @@
+body {
+background: rgb(182, 194, 182);
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
+div {
+    background: grey;
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
+
+.pirmas {
+    background: red;
+   
+}
+
+#antras {
+    background: yellow;
+}

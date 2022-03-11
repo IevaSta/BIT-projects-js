@@ -1,0 +1,52 @@
+/*
+  font-family: 'Alfa Slab One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+ */
+
+
+ .landing {
+     background: url(./assets/headersectionbackground.png);
+     display: flex;
+     justify-content: space-between;
+     margin-top: -180px;
+     padding: 210px 56px;
+ }
+
+ .headings {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-top: 76px;
+ }
+
+.dashed, .landing h2, .landing h4 {
+    color: #3d2514;
+    margin-bottom: 24px;
+      }
+
+.dashed {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px dashed #3d2514;
+    padding: 14px 18px;
+}
+
+.landing h2, .landing h4 {
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 4px 4.5px 0 #fee8bc;
+    text-transform: uppercase;
+
+}
+
+.landing h2 {
+    font-size: 114px;
+}
+
+.landing h4 {
+    font-size: 56px;
+}
+
+
+
