@@ -10,7 +10,7 @@ font-family: 'Montserrat', sans-serif;
      display: flex;
      justify-content: space-between;
      margin-top: -180px;
-     padding: 210px 56px;
+     padding: 210px 56px 78px;
  }
 
  .headings {
@@ -28,16 +28,14 @@ font-family: 'Montserrat', sans-serif;
 .dashed {
     font-family: 'Bebas Neue', cursive;
     font-size: 24px;
-    font-weight: 400;
     border: 1px dashed #3d2514;
-    padding: 14px 18px;
+    padding: 14px 18px 10px;
 }
 
 .landing h2, .landing h4 {
     font-family: 'Alfa Slab One', cursive;
     text-shadow: 4px 4.5px 0 #fee8bc;
     text-transform: uppercase;
-
 }
 
 .landing h2 {
@@ -48,5 +46,48 @@ font-family: 'Montserrat', sans-serif;
     font-size: 56px;
 }
 
+.burger-container {
+    position: relative;
+}
 
+.circle {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    font-family: 'Bebas Neue', cursive;
+    background: #bf2222;
+    width: 174px;
+    height: 174px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 151px;
+    height: 151px;
+    padding: 16px;
+    border: 2px dashed #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+     }
+
+.price-top span:first-child {
+    font-size: 70px;
+}
+
+.price-top span:last-child {
+    font-size: 32px;
+}
+
+.price div:last-child {
+    font-size: 36px;
+    letter-spacing: 12px;
+    margin-right: -12px;
+}
 

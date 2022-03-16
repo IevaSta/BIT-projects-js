@@ -1,0 +1,40 @@
+.trysburgers {
+max-width: 1440px;
+margin: 0 auto 150px;
+display: flex;
+justify-content: space-between;
+padding: 0 50px;
+}
+
+.singleburger {
+text-align: center;
+flex: 0 0 400px;
+}
+
+.singleburger img {
+    max-width: 100%;
+}
+
+.singleburger h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    color: #3d2514;
+    margin: 25px 0;
+}
+
+.singleburger p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #3d2514;
+}
+
+.singleburger button {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #bf2222;
+    padding: 23px 38px 22px;
+margin-top: 25px;
+}

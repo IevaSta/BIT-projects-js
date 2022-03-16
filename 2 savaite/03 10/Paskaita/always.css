@@ -1,0 +1,35 @@
+.AlwaysTB {
+    max-width: 1440px;
+    margin: 0 auto 150px;
+    padding: 0 202px;
+    text-align: center;
+    margin: 0 0 70px 0;
+}
+
+.ATB {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: #3d2514;
+    padding: 12px 22px 13px;
+    }
+
+button {
+    border-style: none;
+    outline: none;
+    background: #ffc045;
+}
+
+.CE {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin: 40px 0;
+}
+
+.CEtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #3d2514;
+    line-height: 1.5;
+}
