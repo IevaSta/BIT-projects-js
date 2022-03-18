@@ -1,6 +1,6 @@
 .discover {
     max-width: 1440px;
-    margin: 0 auto 150px;
+    margin: 0 auto 70px;
     padding: 0 70px;
     
 }
@@ -43,6 +43,3 @@
 margin: 30px;
 }
 
-.turinys input {
-    background-color: #ffc045;
-}
