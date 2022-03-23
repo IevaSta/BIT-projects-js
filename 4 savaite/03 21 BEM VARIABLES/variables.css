@@ -1,0 +1,9 @@
+:root {
+    --background: red;
+    --das: blue;
+    --geltona: yellow;
+        }
+
+body {
+    background: var(--geltona);
+}
