@@ -1,0 +1,11 @@
+@mixin cube ($plotis: 100px, $aukstis: 120px, $spalva: $pilka) {
+    width: $plotis;
+    height: $aukstis;
+    background: $spalva;
+}
+
+@mixin f-c-c ($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
