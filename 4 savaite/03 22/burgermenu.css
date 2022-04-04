@@ -6,87 +6,87 @@ header {
     box-shadow: 0 0 3px 0 grey;
     padding: 24px;
     width: 100%;
-    
+
+}
+
+
+button {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+nav {
+    visibility: hidden;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 93px;
+    left: 0;
+
+}
+
+button:focus nav {
+    visibility: visible;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    padding: 24px 6px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+
+}
+
+li:nth-of-type(1) {
+    border-top: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media (min-width: 768px) {
+    svg {
+        display: none;
     }
 
-
-    button {
-        background: #fff;
-        border: none;
-        outline: none;
-        cursor: pointer;
-
-    }
-
-     nav {
-        visibility: hidden;
-        position: absolute;
-        background: #fff;   
-        width: 100%;
-        top: 93px;
-        left: 0;
-
-     }
-
-    button:focus nav {
+    nav {
+        position: relative;
         visibility: visible;
+        width: none;
+        top: 0;
+        left: 0;
     }
 
     ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
+        flex-direction: row;
+    }
 
     li {
-        padding: 24px 6px;
-        border-bottom: 1px solid #ddd;
-        width: 100%;
-        
-    }
-
-    li:nth-of-type(1){
-        border-top: 1px solid #ddd;
-        }
-
-    a {
-        text-decoration: none;
-        color: grey;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-
-    @media (min-width: 768px) {
-        svg {
-            display: none;
-        }
-
-             nav {
-            position: relative;
-            visibility: visible;
-            width: none;
-            top: 0;
-            left: 0;
-            }
-        
-        ul {
-            flex-direction: row;
-            }
-
-            li {
-                border-bottom: none;
-                
-            }
-
-            li:nth-of-type(1){
-                border-top: none;
-                }
+        border-bottom: none;
 
     }
 
-    /* @media (max-width: 768px) {
+    li:nth-of-type(1) {
+        border-top: none;
+    }
+
+}
+
+/* @media (max-width: 768px) {
            nav {
             width: 100%;
             top: 93px;

@@ -1,0 +1,61 @@
+header {
+    position: relative;
+}
+
+.header {
+    padding: 10px;
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-burger {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__menu-nav {
+    visibility: hidden;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    left: 0;
+    top: 100px;
+
+    ul {
+        background-color: $secondary;
+        display: flex;
+        flex-direction: column;
+
+
+        li {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.header__menu-burger:focus .header__menu-nav {
+    visibility: visible;
+}
+
+
+.header__menu-join {
+    display: flex;
+    align-self: center;
+}
+
+.header__menu-button {
+    display: flex;
+    align-self: flex-start;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: $primary;
+
+}
