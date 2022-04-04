@@ -44,6 +44,7 @@ body {
      }
 
     .header__menu-navigation {
+        z-index: 1;
         visibility: hidden;
         position: absolute;
         font-size: $text-size;
@@ -92,6 +93,7 @@ body {
     }
 
     .header__menu-navigation {
+        
         ul {
             display: flex;
                     
@@ -189,8 +191,7 @@ body {
                         
             @media (min-width: $desktop) {
                 width: 375px;
-                padding: 30px 58px 28px;
-                               
+                padding: 30px 58px 29px;
             }     
             
         }
@@ -238,24 +239,34 @@ body {
         }
 
         @media (min-width: $desktop) {
-            padding: 29px 58px 27px;
+            padding: 26px 58px 14px;
         }
 
 
 
         .search__contact {
+
             @include f-c-c (flex-start, center);
-            //font-size: 18px;
+
             font-size: $text-size;
             font-weight: 600;
 
-          &:first-of-type{
-            margin-bottom: 12px;
+             &:first-of-type{
+                margin-bottom: 12px;
+            }
+
 
             @media (min-width: $tablet) {
                 margin-bottom: 0;
             }
-          }
+
+            @media (min-width: $desktop) {
+                font-size: 18px;
+
+                &:first-of-type{
+                    margin-right: 60px;
+                }
+            }
 
           img {
               margin-right: 16px;
@@ -282,5 +293,129 @@ body {
 
 }
 
+//___________section search end_____________________
 
+//___________section statistics start___________
+
+.statistics {
+    position: relative;
+    @include f-c-c;
+    flex-direction: column;
+    padding: 50px 18px;
+
+    @media (min-width: $tablet){
+    
+    }
+
+    @media (min-width: $desktop){
+        flex-direction: row;
+        padding: 100px 18px;
+        }
+
+}
+
+.statistics__left {
+    width: 100%;
+    color: $text-color;
+
+    @media (min-width: $desktop) {
+        margin-right: 100px;
+    }
+
+    h2 {
+        
+        font-size: 20px;
+        letter-spacing: -1px;
+        line-height: 30px;
+        font-weight: 600;
+
+        @media (min-width: $tablet) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 60%;
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+
+    }
+
+    p {
+        font-size: $text-size;
+        line-height: 30px;
+        font-weight: 400;
+        margin-top: 30px;
+
+        @media (min-width: $desktop) {
+            margin-top: 70px;
+        }
+    }
+
+}
+
+.statistics__right {
+    @include f-c-c;
+    flex-wrap: wrap;
+
+    @media (min-width: $desktop) {
+        @include f-c-c (flex-end, flex-end);
+    }
+         
+    
+    div {
+        @include f-c-c;
+        flex-direction: column;
+        height: 150px;
+        width: 150px;
+        background: $quaternary;
+        margin-left: 30px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:nth-child(3){
+            margin-left: 0;
+        }
+
+        margin-top: 30px;
+        font-weight: 600;
+
+        @media (min-width: $tablet) {
+            &:nth-child(3){
+                margin-left: 30px;
+            }
+        }
+        
+        @media (min-width: $desktop) {
+            &:first-of-type {
+                margin-left: 30px;
+            }
+            height: 201px;
+            width: 201px;
+        }
+
+        h4 {
+            font-size: 40px;
+            letter-spacing: -1px;
+            line-height: 50px;
+            color: $primary;
+            
+        }
+    
+        span {
+            font-size: 14px;
+            line-height: 50px;
+            color: $text-color;            
+        }
+    }
+
+}
+
+//___________section statistics end_____________________
+
+//___________section appartments start___________
 
