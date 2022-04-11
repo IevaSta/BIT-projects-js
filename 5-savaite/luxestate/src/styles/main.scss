@@ -126,6 +126,49 @@ body {
 
 //___________section search start___________
 
+.input__wrapper {
+    position: relative;
+    @include f-c-c(flex-start, flex-start);
+            
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    input {
+        display: block;
+        background: $white;
+        padding: 18px 32px 17px;
+        font-size: 15px;
+        color: $tertiary;
+
+                    
+        @media (min-width: $desktop) {
+            width: 375px;
+            padding: 30px 58px 29px;
+        }     
+        
+    }
+
+    button {
+        background: $primary;
+        padding: 18px 32px 17px;
+        font-weight: 500;
+        font-size: 15px;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        @media (min-width: $desktop) {
+            padding: 30px 34px 29px;
+        }   
+    }
+
+}
+
 .search {
     padding: 0 18px;
     position: relative;
@@ -165,50 +208,7 @@ body {
             font-size: 62px;
             line-height: 78px;
         }
-
-    }
-    
-    .search__main-input {
-        position: relative;
-        @include f-c-c(flex-start, flex-start);
-                
-
-        img {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-
-        input {
-            display: block;
-            background: $white;
-            padding: 18px 32px 17px;
-            font-size: 15px;
-            color: $tertiary;
-
-                        
-            @media (min-width: $desktop) {
-                width: 375px;
-                padding: 30px 58px 29px;
-            }     
-            
-        }
-
-        button {
-            background: $primary;
-            padding: 18px 32px 17px;
-            font-weight: 500;
-            font-size: 15px;
-            border-top-right-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
-
-            @media (min-width: $desktop) {
-                padding: 30px 34px 28px;
-            }   
-        }
-    
+        
     }
 }
 
@@ -419,3 +419,94 @@ body {
 
 //___________section appartments start___________
 
+.appartments__background {
+    background: $quaternary;
+    padding: 64px 0 84px;
+}
+
+.appartments{
+    h2{
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 50px;
+        color: $text-color;
+        font-weight: 600;
+        margin-bottom: 78px;
+        width: 50%;
+    }
+
+    .appartments__cards{
+
+        .appartments__card {
+            img {
+
+            }
+
+            .appartments__card-footer {
+                h5 {
+
+                }
+
+                .appartments__card-footer-info{
+                    small{
+
+                    }
+
+                    ul{
+                        li{
+                            img{
+
+                            }
+
+                            span{
+
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+
+
+        }
+
+    }
+
+.appartments__search{
+    .input__wrapper {
+       margin-right: 40px;
+
+       input {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+       }
+            
+        img {
+            margin-left: 18px;
+        }
+        
+    }
+
+    .appartments__search-all {
+        font-size: 15px;
+        color: $text-color;
+        font-weight: 400;
+        padding: 18px 18px 17px;
+        border-radius: $border-radius;
+        
+    }
+
+    @media (min-width: $tablet) {
+        padding: 18px 34px 17px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 30px 48px 28px;
+    }
+
+
+}
+
+
+}
